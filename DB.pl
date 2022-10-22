@@ -18,3 +18,5 @@ frase('Cuantos años tienes?','How old are you?').
 %verbos
 
 %sustantivos
+sustantivo(espanol, ['hombre'|S],S).
+
