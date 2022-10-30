@@ -1,4 +1,4 @@
-
+?-consult('BNF.pl').
 
 translog():-read(X), 
 tokenize_atom(X, Y),
