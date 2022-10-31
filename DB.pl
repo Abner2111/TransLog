@@ -14,6 +14,21 @@ despedida(['Chao'|S], ['Bye Bye'|S],S).
 despedida(['Nos vemos'|S], ['See you later'|S],S).
 %frase(fraseespanol, )
 
+% Pronombres
+pronombre(masculino, singular, ['yo'], ['i']).
+pronombre(femenino, singular, ['yo'], ['i']).
+pronombre(masculino, singular, ['tu'], ['you']).
+pronombre(femenino, singular, ['tu'], ['you']).
+pronombre(masculino, singular, ['eel'], ['he']).
+pronombre(femenino, singular, ['ella'], ['she']).
+pronombre(masculino, singular, ['ello'], ['it']).
+pronombre(femenino, singular, ['ello'], ['it']).
+pronombre(masculino, plural, ['nosotros'], ['we']).
+pronombre(masculino, plural, ['vosotros'], ['you']).
+pronombre(masculino, plural, ['ellos'], ['they']).
+pronombre(plural, femenino, ['ellas'], ['they']).
+
+
 %verbos estructura (persona, numero, palabra en españo, palabra en ingles)
 
 %---ser
