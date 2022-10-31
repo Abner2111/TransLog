@@ -162,7 +162,21 @@ verbo(tercera, plural, ['trabajan'|S], ['work'|S],S).
 
 %---venir
 
+verbo(primera, singular, ['vengo'|S], ['come'|S],S).
+verbo(segunda, singular, ['vienes'|S], ['come'|S],S).
+verbo(tercera, singular, ['viene'|S], ['comes'|S],S).
+verbo(primera, plural, ['venimos'|S], ['come'|S],S).
+verbo(segunda, plural, ['vienen'|S], ['come'|S],S).
+verbo(tercera, plural, ['vienen'|S], ['come'|S],S).
+
 %---Hacer
+
+verbo(primera, singular, ['hago'|S], ['do'|S],S).
+verbo(segunda, singular, ['haces'|S], ['do'|S],S).
+verbo(tercera, singular, ['hace'|S], ['does'|S],S).
+verbo(primera, plural, ['hacemos'|S], ['do'|S],S).
+verbo(segunda, plural, ['hacen'|S], ['do'|S],S).
+verbo(tercera, plural, ['hacen'|S], ['do'|S],S).
 
 %sustantivos.
 sustantivo(['hombre'|S],['man'|S],S).
