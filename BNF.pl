@@ -107,13 +107,13 @@ sintagma_verbal(ES, EN, S):- pronombre(GENERO, NUMERO, ES1, EN, S1),
 sintagma_verbal(ES, EN, S):- verbo(PERSONA, NUMERO, ES, EN1, S1), adjetivo(GENERO, NUMERO, S1, EN2, S), primero(EN1, P), concatenar(P,EN2, EN).
 %sintagma_verbal(ES, EN, S):- verbo(PERSONA, NUMERO, ES1, EN, S1), adjetivo(GENERO, NUMERO, ES2, S1, S), primero(ES1, P), concatenar(P,ES2, ES).
 
+% Verbo y adverbio
+
+sintagma_verbal(ES, EN, S):- verbo(PERSONA, NUMERO, ES, EN1, S1), adverbio(S1, EN2, S), primero(EN1, P), concatenar(P,EN2, EN).
+
 % sintagma nominal + verbo + sintagma nominal
 
-sintagma_verbal(ES, EN, S):- sintagma_nominal(ES, EN5, S1), 
-                             verbo(PERSONA, NUMERO, S1, EN1, S2), 
-                             sintagma_nominal(S2, EN2, S), 
-                             primero(EN1, P),
-                             concatenar(EN5, P, P2), concatenar(P2, EN2, EN)
+%sintagma_verbal(ES, EN, S):- sintagma_nominal(ES, EN5, S1), verbo(PERSONA, NUMERO, S1, EN1, S2), sintagma_nominal(S2, EN2, S),  primero(EN1, P), concatenar(EN5, P, P2), concatenar(P2, EN2, EN)
 
 
 % Verbo + sintagma nominal ES -> EN
