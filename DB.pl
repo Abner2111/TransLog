@@ -15,10 +15,11 @@ despedida(['Nos vemos'|S], ['See you later'|S],S).
 %frase(fraseespanol, )
 
 % Pronombres
+% Estructura pronombre(genero, numero, palabra en español, palabra en ingles)
 
 pronombre(neutro, singular, ['yo'|S], ['i'|S],S).
 pronombre(neutro, singular, ['tu'|S], ['you'|S],S).
-pronombre(masculino, singular, ['eel'|S], ['he'|S],S).
+pronombre(masculino, singular, ['el'|S], ['he'|S],S).
 pronombre(femenino, singular, ['ella'|S], ['she'|S],S).
 pronombre(neutro, singular, ['ello'|S], ['it'|S],S).
 pronombre(masculino, plural, ['nosotros'|S], ['we'|S],S).
@@ -27,7 +28,8 @@ pronombre(masculino, plural, ['ellos'|S], ['they'|S],S).
 pronombre(femenino, plural,['ellas'|S], ['they'|S],S).
 
 
-%verbos estructura (persona, numero, palabra en españo, palabra en ingles)
+% Verbos 
+% Estructura (persona, numero, palabra en españo, palabra en ingles)
 
 %---ser
 
