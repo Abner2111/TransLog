@@ -302,7 +302,7 @@ sustantivo(masculino, singular,['aire'|S],['air'|S],S).
 sustantivo(masculino, singular,['amor'|S],['love'|S],S).
 sustantivo(masculino, singular,['animal'|S],['animal'|S],S).
 sustantivo(masculino, plural,['anteojos'|S],['glasses'|S],S). %Plural
-sustantivo(masculino, singular,['año'|S],['year'|S],S).
+sustantivo(masculino, singular,['anho'|S],['year'|S],S).
 sustantivo(masculino, singular,['arte'|S],['art'|S],S).
 sustantivo(masculino, singular,['banco'|S],['bank'|S],S).
 sustantivo(masculino, singular,['bebe'|S],['baby'|S],S).
@@ -314,9 +314,81 @@ sustantivo(femenino, singular,['caja'|S],['box'|S],S).
 sustantivo(femenino, singular,['cama'|S],['bed'|S],S).
 sustantivo(femenino, singular,['carne'|S],['meat'|S],S).
 sustantivo(femenino, singular,['ciudad'|S],['city'|S],S).
+sustantivo(femenino, singular,['comida'|S],['food'|S],S).
+sustantivo(masculino, singular,['cuaderno'|S],['notebook'|S],S).
+sustantivo(masculino, singular,['dia'|S],['day'|S],S).
+sustantivo(masculino, singular,['dolar'|S],['dollar'|S],S).
+sustantivo(femenino, singular,['escuela'|S],['school'|S],S).
+sustantivo(femenino, singular,['estrella'|S],['star'|S],S).
+sustantivo(femenino, singular,['estudiante'|S],['student'|S],S).
+sustantivo(masculino, singular,['estudiante'|S],['student'|S],S).
+sustantivo(femenino, singular,['fiesta'|S],['party'|S],S).
+sustantivo(femenino, singular,['flor'|S],['flower'|S],S).
+sustantivo(masculino, singular,['grupo'|S],['group'|S],S).
+sustantivo(femenino, singular,['hija'|S],['daughter'|S],S).
+sustantivo(masculino, singular,['hijo'|S],['son'|S],S).
+sustantivo(masculino, singular,['idioma'|S],['language'|S],S).
+sustantivo(femenino, singular,['iglesia'|S],['church'|S],S).
+sustantivo(femenino, singular,['justicia'|S],['justice'|S],S).
+sustantivo(femenino, singular,['mentira'|S],['lie'|S],S).
+sustantivo(masculino, singular,['numero'|S],['number'|S],S).
+sustantivo(masculino, singular,['periodico'|S],['newspaper'|S],S).
+sustantivo(masculino, singular,['parque'|S],['park'|S],S).
+sustantivo(femenino, singular,['ropa'|S],['clothes'|S],S). %no hace falta ponerlo en plural
+sustantivo(masculino, singular,['telefono'|S],['phone'|S],S).
+sustantivo(masculino, singular,['zapato'|S],['shoe'|S],S).
 
 
 
+%sustantivos - plurales
+sustantivo(masculino, plural, ['hombres'|S],['men'|S],S).
+sustantivo(femenino, plural, ['mujeres'|S],['women'|S],S).
+sustantivo(masculino, plural,['policias'|S],['policemen'|S],S).
+sustantivo(femenino, plural,['policias'|S],['policemen'|S],S).
+sustantivo(masculino, plural,['presidentes'|S],['presidents'|S],S).
+sustantivo(femenino, plural,['presidentes'|S],['presidents'|S],S).
+sustantivo(masculino, plural,['bomberos'|S],['fire fighters'|S],S).
+sustantivo(femenino, plural,['bomberos'|S],['fire fighters'|S],S).
+sustantivo(masculino, plural,['profesores'|S],['teachers'|S],S).
+sustantivo(femenino, plural,['profesoras'|S],['teachers'|S],S).
+sustantivo(masculino, plural,['abogados'|S],['lawyers'|S],S).
+sustantivo(femenino, plural,['abogadas'|S],['lawyers'|S],S).
+sustantivo(masculino, plural,['aires'|S],['airs'|S],S).
+sustantivo(masculino, plural,['amores'|S],['loves'|S],S).
+sustantivo(masculino, plural,['animales'|S],['animals'|S],S).
+sustantivo(masculino, plural,['anhos'|S],['years'|S],S).
+sustantivo(masculino, plural,['artes'|S],['arts'|S],S).
+sustantivo(masculino, plural,['bancos'|S],['banks'|S],S).
+sustantivo(masculino, plural,['bebes'|S],['babies'|S],S).
+sustantivo(femenino, plural,['bebes'|S],['babies'|S],S).
+sustantivo(femenino, plural,['bicicletas'|S],['bicycles'|S],S).
+sustantivo(masculino, plural,['caballos'|S],['horses'|S],S).
+sustantivo(femenino, plural,['cabezas'|S],['heads'|S],S).
+sustantivo(femenino, plural,['cajas'|S],['boxes'|S],S).
+sustantivo(femenino, plural,['camas'|S],['beds'|S],S).
+sustantivo(femenino, plural,['carnes'|S],['meats'|S],S).
+sustantivo(femenino, plural,['ciudades'|S],['cities'|S],S).
+sustantivo(femenino, plural,['comidas'|S],['foods'|S],S).
+sustantivo(masculino, plural,['cuadernos'|S],['notebooks'|S],S).
+sustantivo(masculino, plural,['dias'|S],['days'|S],S).
+sustantivo(masculino, plural,['dolares'|S],['dollars'|S],S).
+sustantivo(femenino, plural,['escuelas'|S],['schools'|S],S).
+sustantivo(femenino, plural,['estrellas'|S],['stars'|S],S).
+sustantivo(masculino, plural,['estudiantes'|S],['students'|S],S).
+sustantivo(femenino, plural,['estudiantes'|S],['students'|S],S).
+sustantivo(femenino, plural,['fiestas'|S],['parties'|S],S).
+sustantivo(femenino, plural,['flores'|S],['flowers'|S],S).
+sustantivo(masculino, plural,['grupos'|S],['groups'|S],S).
+sustantivo(femenino, plural,['hijas'|S],['daughters'|S],S).
+sustantivo(masculino, plural,['hijos'|S],['sons'|S],S).
+sustantivo(masculino, plural,['idiomas'|S],['languages'|S],S).
+sustantivo(femenino, plural,['iglesias'|S],['churches'|S],S).
+sustantivo(femenino, plural,['mentiras'|S],['lies'|S],S).
+sustantivo(masculino, plural,['numeros'|S],['numbers'|S],S).
+sustantivo(masculino, plural,['periodicos'|S],['newspapers'|S],S).
+sustantivo(masculino, plural,['parques'|S],['parks'|S],S).
+sustantivo(masculino, plural,['telefonos'|S],['phones'|S],S).
+sustantivo(masculino, plural,['zapatos'|S],['shoes'|S],S).
 
 
 
