@@ -198,138 +198,89 @@ sustantivo(['hombre'|S],['man'|S],S).
 
 %alto
 adjetivo(masculino, singular,['alto'|S],['tall'|S]).
-adjetivo(masculino, plural,['altos'|S],['tall'|S]).
+adjetivo(masculino, plural,['altos'|S],['tall'|S])
 adjetivo(femenino, singular,['alta'|S],['tall'|S]).
-adjetivo(femenino, plural,['altas'|S],['tall'|S]).
+adjetivo(femenino, plural,['altas'|S],['tall'|S])
 
 %bajo
 adjetivo(masculino, singular,['bajo'|S],['short'|S]).
-adjetivo(masculino, plural,['bajos'|S],['short'|S]).
+adjetivo(masculino, plural,['bajos'|S],['short'|S])
 adjetivo(femenino, singular,['baja'|S],['short'|S]).
-adjetivo(femenino, plural,['bajas'|S],['short'|S]).
+adjetivo(femenino, plural,['bajas'|S],['short'|S])
 
 %blanco
 adjetivo(masculino, singular,['blanco'|S],['white'|S]).
-adjetivo(masculino, plural,['blancos'|S],['white'|S]).
+adjetivo(masculino, plural,['blancos'|S],['white'|S])
 adjetivo(femenino, singular,['blanca'|S],['white'|S]).
-adjetivo(femenino, plural,['blancas'|S],['white'|S]).
+adjetivo(femenino, plural,['blancas'|S],['white'|S])
 
 %rojo
 adjetivo(masculino, singular,['rojo'|S],['red'|S]).
-adjetivo(masculino, plural,['rojos'|S],['red'|S]).
+adjetivo(masculino, plural,['rojos'|S],['red'|S])
 adjetivo(femenino, singular,['roja'|S],['red'|S]).
-adjetivo(femenino, plural,['rojas'|S],['red'|S]).
+adjetivo(femenino, plural,['rojas'|S],['red'|S])
 
 %negro
 adjetivo(masculino, singular,['negro'|S],['black'|S]).
-adjetivo(masculino, plural,['negros'|S],['black'|S]).
+adjetivo(masculino, plural,['negros'|S],['black'|S])
 adjetivo(femenino, singular,['negra'|S],['black'|S]).
-adjetivo(femenino, plural,['negras'|S],['black'|S]).
+adjetivo(femenino, plural,['negras'|S],['black'|S])
 
 %verde
 adjetivo(masculino, singular,['verde'|S],['green'|S]).
-adjetivo(masculino, plural,['verdes'|S],['green'|S]).
+adjetivo(masculino, plural,['verdes'|S],['green'|S])
 adjetivo(femenino, singular,['verde'|S],['green'|S]).
-adjetivo(femenino, plural,['verdes'|S],['green'|S]).
+adjetivo(femenino, plural,['verdes'|S],['green'|S])
 
 %azul
 adjetivo(masculino, singular,['azul'|S],['blue'|S]).
-adjetivo(masculino, plural,['azules'|S],['blue'|S]).
+adjetivo(masculino, plural,['azules'|S],['blue'|S])
 adjetivo(femenino, singular,['azul'|S],['blue'|S]).
-adjetivo(femenino, plural,['azules'|S],['blue'|S]).
+adjetivo(femenino, plural,['azules'|S],['blue'|S])
 
-%amarillo
+%amarillo 
 adjetivo(masculino, singular,['amarillo'|S],['yellow'|S]).
-adjetivo(masculino, plural,['amarillos'|S],['yellow'|S]).
+adjetivo(masculino, plural,['amarillos'|S],['yellow'|S])
 adjetivo(femenino, singular,['amarilla'|S],['yellow'|S]).
-adjetivo(femenino, plural,['amaarillas'|S],['yellow'|S]).
+adjetivo(femenino, plural,['amaarillas'|S],['yellow'|S])
 
 %bonito
 adjetivo(masculino, singular,['bonito'|S],['pretty'|S]).
-adjetivo(masculino, plural,['bonitos'|S],['pretty'|S]).
+adjetivo(masculino, plural,['bonitos'|S],['pretty'|S])
 adjetivo(femenino, singular,['bonita'|S],['pretty'|S]).
-adjetivo(femenino, plural,['bonitas'|S],['pretty'|S]).
+adjetivo(femenino, plural,['bonitas'|S],['pretty'|S])
 
 %feo
 adjetivo(masculino, singular,['feo'|S],['ugly'|S]).
-adjetivo(masculino, plural,['feos'|S],['ugly'|S]).
+adjetivo(masculino, plural,['feos'|S],['ugly'|S])
 adjetivo(femenino, singular,['fea'|S],['ugly'|S]).
-adjetivo(femenino, plural,['feas'|S],['ugly'|S]).
+adjetivo(femenino, plural,['feas'|S],['ugly'|S])
 
 %facil
 adjetivo(masculino, singular,['fácil'|S],['easy'|S]).
-adjetivo(masculino, plural,['faciles'|S],['easy'|S]).
+adjetivo(masculino, plural,['faciles'|S],['easy'|S])
 adjetivo(femenino, singular,['fácil'|S],['easy'|S]).
-adjetivo(femenino, plural,['faciles'|S],['easy'|S]).
+adjetivo(femenino, plural,['faciles'|S],['easy'|S])
 
 %dificil
 adjetivo(masculino, singular,['dificil'|S],['hard'|S]).
-adjetivo(masculino, plural,['dificiles'|S],['hard'|S]).
+adjetivo(masculino, plural,['dificiles'|S],['hard'|S])
 adjetivo(femenino, singular,['dificil'|S],['hard'|S]).
-adjetivo(femenino, plural,['dificiles'|S],['hard'|S]).
+adjetivo(femenino, plural,['dificiles'|S],['hard'|S])
 
 %fuerte
 adjetivo(masculino, singular,['fuerte'|S],['strong'|S]).
-adjetivo(masculino, plural,['fuertes'|S],['strong'|S]).
+adjetivo(masculino, plural,['fuertes'|S],['strong'|S])
 adjetivo(femenino, singular,['fuerte'|S],['strong'|S]).
-adjetivo(femenino, plural,['fuertes'|S],['strong'|S]).
+adjetivo(femenino, plural,['fuertes'|S],['strong'|S])
 
 %debil
 adjetivo(masculino, singular,['debil'|S],['weak'|S]).
-adjetivo(masculino, plural,['debiles'|S],['weak'|S]).
+adjetivo(masculino, plural,['debiles'|S],['weak'|S])
 adjetivo(femenino, singular,['debil'|S],['weak'|S]).
-adjetivo(femenino, plural,['debiles'|S],['weak'|S]).
+adjetivo(femenino, plural,['debiles'|S],['weak'|S])
 /*
 adjetivo(masculino, singular,['adj'|S],['adj'|S]).
 adjetivo(masculino, plural,['adj'|S],['adj'|S])
 adjetivo(femenino, singular,['adj'|S],['adj'|S]).
 adjetivo(femenino, plural,['adj'|S],['adj'|S])*/
-
-%sustantivos - singulares
-sustantivo(masculino, singular, ['hombre'|S],['man'|S],S).
-sustantivo(femenino, singular, ['mujer'|S],['woman'|S],S).
-sustantivo(masculino, singular,['policia'|S],['police'|S],S).
-sustantivo(femenino, singular,['policia'|S],['police'|S],S).
-sustantivo(masculino, singular,['presidente'|S],['president'|S],S).
-sustantivo(femenino, singular,['presidente'|S],['president'|S],S).
-sustantivo(masculino, singular,['bombero'|S],['fire fighter'|S],S).
-sustantivo(femenino, singular,['bombero'|S],['fire fighter'|S],S).
-sustantivo(masculino, singular,['profesor'|S],['teacher'|S],S).
-sustantivo(femenino, singular,['profesora'|S],['teacher'|S],S).
-sustantivo(masculino, singular,['abogado'|S],['lawyer'|S],S).
-sustantivo(femenino, singular,['abogada'|S],['lawyer'|S],S).
-sustantivo(masculino, singular,['aire'|S],['air'|S],S).
-sustantivo(masculino, singular,['amor'|S],['love'|S],S).
-sustantivo(masculino, singular,['animal'|S],['animal'|S],S).
-sustantivo(masculino, plural,['anteojos'|S],['glasses'|S],S). %Plural
-sustantivo(masculino, singular,['a�o'|S],['year'|S],S).
-sustantivo(masculino, singular,['arte'|S],['art'|S],S).
-sustantivo(masculino, singular,['banco'|S],['bank'|S],S).
-sustantivo(masculino, singular,['bebe'|S],['baby'|S],S).
-sustantivo(femenino, singular,['bebe'|S],['baby'|S],S).
-sustantivo(femenino, singular,['bicicleta'|S],['bicycle'|S],S).
-sustantivo(masculino, singular,['caballo'|S],['horse'|S],S).
-sustantivo(femenino, singular,['cabeza'|S],['head'|S],S).
-sustantivo(femenino, singular,['caja'|S],['box'|S],S).
-sustantivo(femenino, singular,['cama'|S],['bed'|S],S).
-sustantivo(femenino, singular,['carne'|S],['meat'|S],S).
-sustantivo(femenino, singular,['ciudad'|S],['city'|S],S).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
