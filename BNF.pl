@@ -9,15 +9,24 @@ sintagma_verbal(primera,singular,S0e,S0i,S):-verbo(primera, singular,S0e,S0i,S).
 
 % Formado por un sustantivo o pronombre unico
 
-sintagma_nominal(ES, EN):- pronombre(GENERO, NUMERO, ES, EN, S).
-sintagma_nominal(ES, EN):- sustantivo(GENERO, NUMERO, ES, EN, S).
+sintagma_nominal(ES, EN, S):- pronombre(GENERO, NUMERO, ES, EN, S).
+sintagma_nominal(ES, EN, S):- sustantivo(GENERO, NUMERO, ES, EN, S).
 
 % Formado por un término que funcione como núcleo acompañado de otras palabras que lo modifican
 
-sintagma_nominal(ES, EN):- determinante(GENERO, NUMERO, ES, EN, S), sustantivo(GENERO, NUMERO, ES, EN, S). 
-sintagma_nominal(ES, EN):- determinante(GENERO, NUMERO, ES, EN, S), sustantivo(GENERO, NUMERO, ES, EN, S), adjetivo(GENERO, NUMERO, ES, EN, S).
-sintagma_nominal(ES, EN):- determinante(GENERO, NUMERO, ES, EN, S), adjetivo(GENERO, NUMERO, ES, EN, S), sustantivo(GENERO, NUMERO, ES, EN, S).
-sintagma_nominal(ES, EN):- sustantivo(GENERO, NUMERO, ES, EN, S), adjetivo(GENERO, NUMERO, ES, EN, S).
-sintagma_nominal(ES, EN):- adjetivo(GENERO, NUMERO, ES, EN, S), sustantivo(GENERO, NUMERO, ES, EN, S).
+sintagma_nominal(ES, EN, S):- determinante(GENERO, NUMERO, ES, EN, S1), sustantivo(GENERO, NUMERO, S1, EN, S). 
+sintagma_nominal(ES, EN, S):- determinante(GENERO, NUMERO, ES, EN, S1), sustantivo(GENERO, NUMERO, ES, S1, S). 
+sintagma_nominal(ES, EN, S):- determinante(GENERO, NUMERO, ES, EN, S), sustantivo(GENERO, NUMERO, ES, EN, S), adjetivo(GENERO, NUMERO, ES, EN).
+sintagma_nominal(ES, EN, S):- determinante(GENERO, NUMERO, ES, EN, S), adjetivo(GENERO, NUMERO, ES, EN), sustantivo(GENERO, NUMERO, ES, EN, S).
+sintagma_nominal(ES, EN, S):- sustantivo(GENERO, NUMERO, ES, EN, S), adjetivo(GENERO, NUMERO, ES, EN).
+sintagma_nominal(ES, EN, S):- adjetivo(GENERO, NUMERO, ES, EN), sustantivo(GENERO, NUMERO, ES, EN, S).
 
 % Sintagma verbal
+
+%Solamente verbo
+
+%Verbo y un adjetivo
+
+%Verbo y sintagma nominal
+
+%Sintagma verbal solo con verbo
