@@ -14,6 +14,14 @@ despedida(['Chao'|S], ['Bye Bye'|S],S).
 despedida(['Nos vemos'|S], ['See you later'|S],S).
 %frase(fraseespanol, )
 
+
+%determinantes
+determinante(masculino, singular,  ['el'|S],['the'|S],S).
+determinante(masculino, plural, ['los'|S],['the'|S],S).
+determinante(femenino, singular, ['la'|S],['the'|S],S).
+determinante(masculino, plural, ['las'|S],['the'|S],S).
+
+
 % Pronombres
 
 pronombre(neutro, singular, ['yo'|S], ['i'|S],S).
