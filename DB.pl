@@ -19,7 +19,7 @@ despedida(['Nos vemos'|S], ['See you later'|S],S).
 determinante(masculino, singular,  ['el'|S],['the'|S],S).
 determinante(masculino, plural, ['los'|S],['the'|S],S).
 determinante(femenino, singular, ['la'|S],['the'|S],S).
-determinante(masculino, plural, ['las'|S],['the'|S],S).
+determinante(femenino, plural, ['las'|S],['the'|S],S).
 
 
 % Pronombres

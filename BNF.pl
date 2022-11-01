@@ -4,6 +4,9 @@ sintagma_verbal(primera,singular,S0e,S0i,S):-verbo(primera, singular,S0e,S0i,S).
 %sintagma_nominal(S0,S,I0,I):-determinante(S0, S1, I0, I1),sustantivo(S1, S, I1, I).
 
 
+concatenar([], L, L).
+concatenar([X|L1], L2, [X|L3]):-concatenar(L1, L2, L3).
+primero([X|T], [X]).
 % Sintagma nominal
 % Valida si es una estructura que tiene un sustantivo, pronombre como nucleo
 
@@ -14,7 +17,7 @@ sintagma_nominal(ES, EN, S):- sustantivo(GENERO, NUMERO, ES, EN, S).
 
 % Formado por un término que funcione como núcleo acompañado de otras palabras que lo modifican
 
-sintagma_nominal(ES, EN, S):- determinante(GENERO, NUMERO, ES, EN, S1), sustantivo(GENERO, NUMERO, S1, EN, S). 
+sintagma_nominal(ES,EN, S):- determinante(GENERO, NUMERO, ES, EN1, S1), sustantivo(GENERO, NUMERO, S1, EN2, S), primero(EN1, P), concatenar(P,EN2, EN).
 sintagma_nominal(ES, EN, S):- determinante(GENERO, NUMERO, ES, EN, S1), sustantivo(GENERO, NUMERO, ES, S1, S). 
 sintagma_nominal(ES, EN, S):- determinante(GENERO, NUMERO, ES, EN, S), sustantivo(GENERO, NUMERO, ES, EN, S), adjetivo(GENERO, NUMERO, ES, EN).
 sintagma_nominal(ES, EN, S):- determinante(GENERO, NUMERO, ES, EN, S), adjetivo(GENERO, NUMERO, ES, EN), sustantivo(GENERO, NUMERO, ES, EN, S).
