@@ -50,7 +50,7 @@ verbo(primera, singular, ['tomo'|S], ['take'|S],S).
 verbo(primera, singular, ['como'|S], ['eat'|S],S).
 verbo(primera, singular, ['doy'|S], ['give'|S],S).
 verbo(primera, singular, ['voy'|S], ['go'|S],S).
-verbo(primera, singular, ['sé'|S], ['know'|S],S).
+verbo(primera, singular, ['se'|S], ['know'|S],S).
 verbo(primera, singular, ['miro'|S], ['watch'|S],S).
 verbo(primera, singular, ['digo'|S], ['say'|S],S).
 verbo(primera, singular, ['veo'|S], ['see'|S],S).
@@ -83,7 +83,7 @@ verbo(segunda, singular, ['vienes'|S], ['come'|S],S).
 verbo(segunda, singular, ['haces'|S], ['do'|S],S).
 
 %verbo Tercera persona singular
-verbo(tercera, singular, ['está'|S], ['is'|S],S).
+verbo(tercera, singular, ['esta'|S], ['is'|S],S).
 verbo(tercera, singular, ['tiene'|S], ['has'|S],S).
 verbo(tercera, singular, ['pregunta'|S], ['asks'|S],S).
 verbo(tercera, singular, ['llama'|S], ['calls'|S],S).
@@ -123,27 +123,27 @@ verbo(primera, plural, ['venimos'|S], ['come'|S],S).
 verbo(primera, plural, ['hacemos'|S], ['do'|S],S).
 
 %verbo Segunda Persona Plural
-verbo(segunda, plural, ['estaís'|S], ['are'|S],S).
-verbo(segunda, plural, ['tenéis'|S], ['have'|S],S).
-verbo(segunda, plural, ['preguntáis'|S], ['ask'|S],S).
-verbo(segunda, plural, ['llamaís'|S], ['call'|S],S).
-verbo(segunda, plural, ['tomáis'|S], ['take'|S],S).
-verbo(segunda, plural, ['comeís'|S], ['eat'|S],S).
-verbo(segunda, plural, ['dáis'|S],['give'|S],S).
+verbo(segunda, plural, ['estais'|S], ['are'|S],S).
+verbo(segunda, plural, ['teneis'|S], ['have'|S],S).
+verbo(segunda, plural, ['preguntais'|S], ['ask'|S],S).
+verbo(segunda, plural, ['llamais'|S], ['call'|S],S).
+verbo(segunda, plural, ['tomais'|S], ['take'|S],S).
+verbo(segunda, plural, ['comeis'|S], ['eat'|S],S).
+verbo(segunda, plural, ['dais'|S],['give'|S],S).
 verbo(segunda, plural, ['vais'|S], ['go'|S],S).
-verbo(segunda, plural, ['sabéis'|S], ['know'|S],S).
-verbo(segunda, plural, ['miráis'|S], ['watch'|S],S).
-verbo(segunda, plural, ['decís'|S], ['say'|S],S).
+verbo(segunda, plural, ['sabeis'|S], ['know'|S],S).
+verbo(segunda, plural, ['mirais'|S], ['watch'|S],S).
+verbo(segunda, plural, ['decis'|S], ['say'|S],S).
 verbo(segunda, plural, ['veis'|S], ['see'|S],S).
-verbo(segunda, plural, ['pensáis'|S], ['think'|S],S).
-verbo(segunda, plural, ['usáis'|S], ['use'|S],S).
-verbo(segunda, plural, ['queréis'|S], ['want'|S],S).
-verbo(segunda, plural, ['trabajáis'|S], ['work'|S],S).
+verbo(segunda, plural, ['pensais'|S], ['think'|S],S).
+verbo(segunda, plural, ['usais'|S], ['use'|S],S).
+verbo(segunda, plural, ['quereis'|S], ['want'|S],S).
+verbo(segunda, plural, ['trabajais'|S], ['work'|S],S).
 verbo(segunda, plural, ['vienen'|S], ['come'|S],S).
 verbo(segunda, plural, ['hacen'|S], ['do'|S],S).
 
 %verbo Tercera persona Plural
-verbo(tercera, plural, ['están'|S], ['are'|S],S).
+verbo(tercera, plural, ['estan'|S], ['are'|S],S).
 verbo(tercera, plural, ['tienen'|S], ['have'|S],S).
 verbo(tercera, plural, ['preguntan'|S], ['ask'|S],S).
 verbo(tercera, plural, ['llaman'|S], ['call'|S],S).
@@ -175,7 +175,7 @@ adjetivo(masculino, singular,['azul'|S],['blue'|S], S).
 adjetivo(masculino, singular,['amarillo'|S],['yellow'|S], S).
 adjetivo(masculino, singular,['bonito'|S],['pretty'|S], S).
 adjetivo(masculino, singular,['feo'|S],['ugly'|S], S).
-adjetivo(masculino, singular,['fácil'|S],['easy'|S], S).
+adjetivo(masculino, singular,['facil'|S],['easy'|S], S).
 adjetivo(masculino, singular,['dificil'|S],['hard'|S], S).
 adjetivo(masculino, singular,['fuerte'|S],['strong'|S], S).
 adjetivo(masculino, singular,['debil'|S],['weak'|S], S).
@@ -208,7 +208,7 @@ adjetivo(femenino, singular,['azul'|S],['blue'|S], S).
 adjetivo(femenino, singular,['amarilla'|S],['yellow'|S], S).
 adjetivo(femenino, singular,['bonita'|S],['pretty'|S]V).
 adjetivo(femenino, singular,['fea'|S],['ugly'|S], S).
-adjetivo(femenino, singular,['fácil'|S],['easy'|S], S).
+adjetivo(femenino, singular,['facil'|S],['easy'|S], S).
 adjetivo(femenino, singular,['dificil'|S],['hard'|S], S).
 adjetivo(femenino, singular,['fuerte'|S],['strong'|S], S).
 adjetivo(femenino, singular,['debil'|S],['weak'|S], S).

@@ -46,7 +46,7 @@ verbo(primera, singular, ['tengo'|S], ['have'|S],S).
 verbo(segunda, singular, ['tienes'|S], ['have'|S],S).
 verbo(tercera, singular, ['tiene'|S], ['has'|S],S).
 verbo(primera, plural, ['tenemos'|S], ['have'|S],S).
-verbo(segunda, plural, ['tenéis'|S], ['have'|S],S).
+verbo(segunda, plural, ['teneis'|S], ['have'|S],S).
 verbo(tercera, plural, ['tienen'|S], ['have'|S],S).
 
 %---preguntar
@@ -105,11 +105,11 @@ verbo(tercera, plural, ['van'|S], ['go'|S],S).
 
 %---saber
 
-verbo(primera, singular, ['sé'|S], ['know'|S],S).
+verbo(primera, singular, ['se'|S], ['know'|S],S).
 verbo(segunda, singular, ['sabes'|S], ['know'|S],S).
 verbo(tercera, singular, ['sabe'|S], ['knows'|S],S).
 verbo(primera, plural, ['sabemos'|S], ['know'|S],S).
-verbo(segunda, plural, ['sabéis'|S], ['know'|S],S).
+verbo(segunda, plural, ['sabeis'|S], ['know'|S],S).
 verbo(tercera, plural, ['saben'|S], ['know'|S],S).
 
 %---mirar
@@ -163,7 +163,7 @@ verbo(primera, singular, ['quiero'|S], ['want'|S],S).
 verbo(segunda, singular, ['quieres'|S], ['want'|S],S).
 verbo(tercera, singular, ['quiere'|S], ['wants'|S],S).
 verbo(primera, plural, ['queremos'|S], ['want'|S],S).
-verbo(segunda, plural, ['queréis'|S], ['want'|S],S).
+verbo(segunda, plural, ['quereis'|S], ['want'|S],S).
 verbo(tercera, plural, ['quieren'|S], ['want'|S],S).
 
 %---trabajar
