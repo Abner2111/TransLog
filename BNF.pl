@@ -17,11 +17,22 @@ sintagma_nominal(ES, EN, S):- sustantivo(GENERO, NUMERO, ES, EN, S).
 
 % Formado por un termino que funcione como nucleo acompañado de otras palabras que lo modifican
 
-sintagma_nominal(ES,EN, S):- determinante(GENERO, NUMERO, ES, EN1, S1), sustantivo(GENERO, NUMERO, S1, EN2, S), primero(EN1, P), concatenar(P,EN2, EN).
-sintagma_nominal(ES,EN, S):- determinante(GENERO, NUMERO, ES1, EN, S1), sustantivo(GENERO, NUMERO, ES2, S1, S), primero(ES1, P), concatenar(P,ES2, ES).
+sintagma_nominal(ES,EN, S):- determinante(GENERO, NUMERO, ES, EN1, S1), sustantivo(GENERO, NUMERO, S1, EN2, S), primero(EN1, P), primero(EN2, P2), concatenar(P,P2, EN).
+sintagma_nominal(ES,EN, S):- determinante(GENERO, NUMERO, ES1, EN, S1), sustantivo(GENERO, NUMERO, ES2, S1, S), primero(ES1, P), primero(ES2, P2) , concatenar(P,P2, ES).
 
-sintagma_nominal(ES, EN, S):- determinante(GENERO, NUMERO, ES, EN1, S1), sustantivo(GENERO, NUMERO, S1, EN2, S2), adjetivo(GENERO, NUMERO, S2, EN3, S), primero(EN1, P1), primero(EN2, P2), concatenar(P1, P2, R), concatenar(R, EN3, EN).
-sintagma_nominal(ES, EN, S):- determinante(GENERO, NUMERO, ES1, EN, S1), sustantivo(GENERO, NUMERO, ES2, S1, S2), adjetivo(GENERO, NUMERO, ES3, S2, S), primero(ES1, P1), primero(ES2, P2), concatenar(P1, P2, R), concatenar(R, ES3, ES).
+sintagma_nominal(ES, EN, S):- determinante(GENERO, NUMERO, ES, EN1, S1),
+                              sustantivo(GENERO, NUMERO, S1, EN2, S2),
+                              adjetivo(GENERO, NUMERO, S2, EN3, S), 
+                              primero(EN1, P1), primero(EN2, P2),  
+                              primero(EN3, P3), 
+                              concatenar(P1, P3, R), 
+                              concatenar(R, P2, EN).
+
+sintagma_nominal(ES, EN, S):- determinante(GENERO, NUMERO, ES1, EN, S1),
+                              adjetivo(GENERO, NUMERO, ES2, S1, S), 
+                              sustantivo(GENERO, NUMERO, ES3, S2, S), 
+                              primero(ES1, P1), primero(ES3, P3), primero(ES2, P2)
+                              concatenar(P1, P3, R), concatenar(R, P2, ES).
 
 sintagma_nominal(ES, EN, S):- determinante(GENERO, NUMERO, ES, EN1, S1), adjetivo(GENERO, NUMERO, S1, EN2, S2), sustantivo(GENERO, NUMERO, S2, EN3, S), primero(EN1, P1), primero(EN2, P2), concatenar(P1, P2, R), concatenar(R, EN3, EN).
 sintagma_nominal(ES, EN, S):- determinante(GENERO, NUMERO, ES1, EN, S1), adjetivo(GENERO, NUMERO, ES2, S1, S2), sustantivo(GENERO, NUMERO, ES3, S2, S), primero(ES1, P1), primero(ES2, P2), concatenar(P1, P2, R), concatenar(R, ES3, ES).
@@ -39,13 +50,21 @@ sintagma_nominal(ES, EN, S):- adjetivo(GENERO, NUMERO, ES1, EN, S1), sustantivo(
 
 sintagma_verbal(ES, EN, S):- verbo(PERSONA, NUMERO, ES, EN, S).
 
+%Verbo y sintagma nominal
+
+sintagma_verbal(ES, EN, S):- sintagma_nominal(ES, EN5, S1), verbo(PERSONA, NUMERO, S1, EN1, S), primero(EN1, P), concatenar(EN5,EN1, EN).
+sintagma_verbal(ES, EN, S):- verbo(PERSONA, NUMERO, ES, EN1, S1), sintagma_nominal(S1, EN5, []), primero(EN1, P), concatenar(P,EN5, EN).
+
 %Verbo y un adjetivo
 
 sintagma_verbal(ES, EN, S):- verbo(PERSONA, NUMERO, ES, EN1, S1), adjetivo(GENERO, NUMERO, S1, EN2, S), primero(EN1, P), concatenar(P,EN2, EN).
 sintagma_verbal(ES, EN, S):- verbo(PERSONA, NUMERO, ES1, EN, S1), adjetivo(GENERO, NUMERO, ES2, S1, S), primero(ES1, P), concatenar(P,ES2, EN).
 
-%Verbo y sintagma nominal
+% pronombre y verbo SE PUEDE MEJORAR PONIENDO SIGTAGMA NOMINAL Y VERBO
 
-%sintagma_verbal(ES, EN, S):- verbo(PERSONA, NUMERO, ES, EN1, S1), sintagma_nominal(S1, EN2), primero(EN1, P), concatenar(P,EN2, EN).
+sintagma_verbal(ES, EN, S):- pronombre(GENERO, NUMERO, ES, EN1, S1), verbo(PERSONA, NUMERO, S1, EN2, S), primero(EN1, P), concatenar(P,EN2, EN).
+sintagma_verbal(ES, EN, S):- pronombre(GENERO, NUMERO, ES1, EN, S1), verbo(PERSONA, NUMERO, ES2, S1, S), primero(ES1, P), concatenar(P,ES2, EN).
+
+
 
 %Sintagma verbal solo con verbo
