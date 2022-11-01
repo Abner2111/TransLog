@@ -12,8 +12,10 @@ primero([X|T], [X]).
 
 % Formado por un sustantivo o pronombre unico
 
-sintagma_nominal(ES, EN, S):- pronombre(GENERO, NUMERO, ES, EN, S).
-sintagma_nominal(ES, EN, S):- sustantivo(GENERO, NUMERO, ES, EN, S).
+sintagma_nominal(ES, EN, S):- pronombre(GENERO, NUMERO, ES, P, S), primero(P, EN).
+sintagma_nominal(ES, EN, S):- pronombre(GENERO, NUMERO, P, EN, S), primero(P, ES).
+sintagma_nominal(ES, EN, S):- sustantivo(GENERO, NUMERO, ES, P, S), primero(P, EN).
+sintagma_nominal(ES, EN, S):- sustantivo(GENERO, NUMERO, P, EN, S), primero(P, ES).
 
 % Formado por un termino que funcione como nucleo acompañado de otras palabras que lo modifican
 
