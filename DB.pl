@@ -390,6 +390,28 @@ sustantivo(masculino, plural,['parques'|S],['parks'|S],S).
 sustantivo(masculino, plural,['telefonos'|S],['phones'|S],S).
 sustantivo(masculino, plural,['zapatos'|S],['shoes'|S],S).
 
+%adverbio(espanol, ingles, resto)
+adverbio(['ahora'|S], ['now'|S],S).
+adverbio(['antes'|S], ['before'|S],S).
+adverbio(['ayer'|S], ['yesterday'|S],S).
+adverbio(['hoy'|S], ['today'|S],S).
+adverbio(['manana'|S], ['tomorrow'|S],S).
+adverbio(['mal'|S], ['badly'|S],S).
+adverbio(['bien'|S], ['well'|S],S).
+adverbio(['deprisa'|S], ['quickly'|S],S).
+adverbio(['alla'|S], ['there'|S],S).
+adverbio(['todavia'|S], ['yet'|S],S).
+adverbio(['despacio'|S], ['slowly'|S],S).
+adverbio(['lejos'|S], ['far'|S],S).
+adverbio(['todo'|S], ['all'|S],S).
+adverbio(['nada'|S], ['nothing'|S],S).
+adverbio(['mas'|S], ['more'|S],S).
+adverbio(['menos'|S], ['less'|S],S).
+adverbio(['tampoco'|S], ['neither'|S],S).
+adverbio(['dificilmente'|S], ['hardly'|S],S).
+adverbio(['facilmente'|S], ['easily'|S],S).
+adverbio(['fuertemente'|S], ['strongly'|S],S).
+adverbio(['debilmente'|S], ['weakly'|S],S).
 
 
 
