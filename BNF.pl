@@ -81,23 +81,47 @@ sintagma_nominal(ES, EN, S):- determinante(GENERO, NUMERO, ES, EN1, S1),
 
 % Sintagma verbal
 
-%Solamente verbo
+% Solamente verbo
+% Ejm: comer
 
 sintagma_verbal(ES, EN, S):- verbo(PERSONA, NUMERO, ES, EN, S).
 
-% pronombre y verbo SE PUEDE MEJORAR PONIENDO SIGTAGMA NOMINAL Y VERBO
+% Pronombre + verbo ES -> EN
+% Ejm: Ella come -> she eats
 
-sintagma_verbal(ES, EN, S):- pronombre(GENERO, NUMERO, ES, EN1, S1), verbo(PERSONA, NUMERO, S1, EN2, S), primero(EN1, P), concatenar(P,EN2, EN).
-sintagma_verbal(ES, EN, S):- pronombre(GENERO, NUMERO, ES1, EN, S1), verbo(PERSONA, NUMERO, ES2, S1, S), primero(ES1, P), concatenar(P,ES2, EN).
+sintagma_verbal(ES, EN, S):- pronombre(GENERO, NUMERO, ES, EN1, S1), 
+                             verbo(PERSONA, NUMERO, S1, EN2, S), 
+                             primero(EN1, P), 
+                             concatenar(P,EN2, EN).
 
-%Verbo y sintagma nominal
+% Pronombre + verbo EN -> ES
+% Ejm: she eats -> Ella come 
 
-sintagma_verbal(ES, EN, S):- sintagma_nominal(ES, EN5, S1), verbo(PERSONA, NUMERO, S1, EN1, S), primero(EN1, P), concatenar(EN5,EN1, EN).
-sintagma_verbal(ES, EN, S):- verbo(PERSONA, NUMERO, ES, EN1, S1), sintagma_nominal(S1, EN5, []), primero(EN1, P), concatenar(EN5,P, EN).
+sintagma_verbal(ES, EN, S):- pronombre(GENERO, NUMERO, ES1, EN, S1), 
+                             verbo(PERSONA, NUMERO, ES2, S1, S), 
+                             primero(ES1, P), 
+                             concatenar(P,ES2, ES).
 
 %Verbo y un adjetivo
 
 sintagma_verbal(ES, EN, S):- verbo(PERSONA, NUMERO, ES, EN1, S1), adjetivo(GENERO, NUMERO, S1, EN2, S), primero(EN1, P), concatenar(P,EN2, EN).
-sintagma_verbal(ES, EN, S):- verbo(PERSONA, NUMERO, ES1, EN, S1), adjetivo(GENERO, NUMERO, ES2, S1, S), primero(ES1, P), concatenar(P,ES2, EN).
+%sintagma_verbal(ES, EN, S):- verbo(PERSONA, NUMERO, ES1, EN, S1), adjetivo(GENERO, NUMERO, ES2, S1, S), primero(ES1, P), concatenar(P,ES2, ES).
+
+% Verbo y adverbio
+
+sintagma_verbal(ES, EN, S):- verbo(PERSONA, NUMERO, ES, EN1, S1), adverbio(S1, EN2, S), primero(EN1, P), concatenar(P,EN2, EN).
+
+% sintagma nominal + verbo + sintagma nominal
+
+%sintagma_verbal(ES, EN, S):- sintagma_nominal(ES, EN5, S1), verbo(PERSONA, NUMERO, S1, EN1, S2), sintagma_nominal(S2, EN2, S),  primero(EN1, P), concatenar(EN5, P, P2), concatenar(P2, EN2, EN)
+
+
+% Verbo + sintagma nominal ES -> EN
+% Ejm: pregunta el policia -> The police asks 
+
+sintagma_verbal(ES, EN, S):- sintagma_nominal(ES, EN5, S1), verbo(PERSONA, NUMERO, S1, EN1, S), primero(EN1, P), concatenar(EN5,EN1, EN).
+sintagma_verbal(ES, EN, S):- verbo(PERSONA, NUMERO, ES, EN1, S1), sintagma_nominal(S1, EN5, []), primero(EN1, P), concatenar(EN5,P, EN).
+
+
 
 
