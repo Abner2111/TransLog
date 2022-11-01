@@ -8,7 +8,7 @@
 
 %saludo(saludoespanol, saludoingles)
 saludo(['Pura vida'|S], ['Everything going good'|S],S).
-saludo(['Tuanis',|S],['Everything going good',S],S).
+saludo(['Tuanis'|S],['Everything going good',S],S).
 %despedida(despedidaespanol, despedidaingles)
 despedida(['Chao'|S], ['Bye Bye'|S],S).
 despedida(['Nos vemos'|S], ['See you later'|S],S).
@@ -19,14 +19,16 @@ despedida(['Nos vemos'|S], ['See you later'|S],S).
 determinante(masculino, singular,  ['el'|S],['the'|S],S).
 determinante(masculino, plural, ['los'|S],['the'|S],S).
 determinante(femenino, singular, ['la'|S],['the'|S],S).
-determinante(masculino, plural, ['las'|S],['the'|S],S).
+determinante(femenino, plural, ['las'|S],['the'|S],S).
 
 
 % Pronombres
+% Estructura pronombre(genero, numero, palabra en español, palabra en ingles)
+
 
 pronombre(neutro, singular, ['yo'|S], ['i'|S],S).
 pronombre(neutro, singular, ['tu'|S], ['you'|S],S).
-pronombre(masculino, singular, ['eel'|S], ['he'|S],S).
+pronombre(masculino, singular, ['el'|S], ['he'|S],S).
 pronombre(femenino, singular, ['ella'|S], ['she'|S],S).
 pronombre(neutro, singular, ['ello'|S], ['it'|S],S).
 pronombre(masculino, plural, ['nosotros'|S], ['we'|S],S).
@@ -35,7 +37,8 @@ pronombre(masculino, plural, ['ellos'|S], ['they'|S],S).
 pronombre(femenino, plural,['ellas'|S], ['they'|S],S).
 
 
-%verbos estructura (persona, numero, palabra en españo, palabra en ingles)
+% Verbos
+% Estructura (persona, numero, palabra en españo, palabra en ingles)
 
 %verbo Primera persona singular
 
