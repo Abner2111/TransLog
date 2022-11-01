@@ -8,7 +8,7 @@
 
 %saludo(saludoespanol, saludoingles)
 saludo(['Pura vida'|S], ['Everything going good'|S],S).
-saludo(['Tuanis'|S],['Everything going good',S],S).
+saludo(['Tuanis',|S],['Everything going good',S],S).
 %despedida(despedidaespanol, despedidaingles)
 despedida(['Chao'|S], ['Bye Bye'|S],S).
 despedida(['Nos vemos'|S], ['See you later'|S],S).
@@ -16,7 +16,6 @@ despedida(['Nos vemos'|S], ['See you later'|S],S).
 
 % Pronombres
 % Estructura pronombre(genero, numero, palabra en español, palabra en ingles)
-
 
 pronombre(neutro, singular, ['yo'|S], ['i'|S],S).
 pronombre(neutro, singular, ['tu'|S], ['you'|S],S).
@@ -29,7 +28,7 @@ pronombre(masculino, plural, ['ellos'|S], ['they'|S],S).
 pronombre(femenino, plural,['ellas'|S], ['they'|S],S).
 
 
-% Verbos
+% Verbos 
 % Estructura (persona, numero, palabra en españo, palabra en ingles)
 
 %---ser
@@ -201,87 +200,87 @@ sustantivo(['hombre'|S],['man'|S],S).
 
 %alto
 adjetivo(masculino, singular,['alto'|S],['tall'|S]).
-adjetivo(masculino, plural,['altos'|S],['tall'|S]).
+adjetivo(masculino, plural,['altos'|S],['tall'|S])
 adjetivo(femenino, singular,['alta'|S],['tall'|S]).
-adjetivo(femenino, plural,['altas'|S],['tall'|S]).
+adjetivo(femenino, plural,['altas'|S],['tall'|S])
 
 %bajo
 adjetivo(masculino, singular,['bajo'|S],['short'|S]).
-adjetivo(masculino, plural,['bajos'|S],['short'|S]).
+adjetivo(masculino, plural,['bajos'|S],['short'|S])
 adjetivo(femenino, singular,['baja'|S],['short'|S]).
-adjetivo(femenino, plural,['bajas'|S],['short'|S]).
+adjetivo(femenino, plural,['bajas'|S],['short'|S])
 
 %blanco
 adjetivo(masculino, singular,['blanco'|S],['white'|S]).
-adjetivo(masculino, plural,['blancos'|S],['white'|S]).
+adjetivo(masculino, plural,['blancos'|S],['white'|S])
 adjetivo(femenino, singular,['blanca'|S],['white'|S]).
-adjetivo(femenino, plural,['blancas'|S],['white'|S]).
+adjetivo(femenino, plural,['blancas'|S],['white'|S])
 
 %rojo
 adjetivo(masculino, singular,['rojo'|S],['red'|S]).
-adjetivo(masculino, plural,['rojos'|S],['red'|S]).
+adjetivo(masculino, plural,['rojos'|S],['red'|S])
 adjetivo(femenino, singular,['roja'|S],['red'|S]).
-adjetivo(femenino, plural,['rojas'|S],['red'|S]).
+adjetivo(femenino, plural,['rojas'|S],['red'|S])
 
 %negro
 adjetivo(masculino, singular,['negro'|S],['black'|S]).
-adjetivo(masculino, plural,['negros'|S],['black'|S]).
+adjetivo(masculino, plural,['negros'|S],['black'|S])
 adjetivo(femenino, singular,['negra'|S],['black'|S]).
-adjetivo(femenino, plural,['negras'|S],['black'|S]).
+adjetivo(femenino, plural,['negras'|S],['black'|S])
 
 %verde
 adjetivo(masculino, singular,['verde'|S],['green'|S]).
-adjetivo(masculino, plural,['verdes'|S],['green'|S]).
+adjetivo(masculino, plural,['verdes'|S],['green'|S])
 adjetivo(femenino, singular,['verde'|S],['green'|S]).
-adjetivo(femenino, plural,['verdes'|S],['green'|S]).
+adjetivo(femenino, plural,['verdes'|S],['green'|S])
 
 %azul
 adjetivo(masculino, singular,['azul'|S],['blue'|S]).
-adjetivo(masculino, plural,['azules'|S],['blue'|S]).
+adjetivo(masculino, plural,['azules'|S],['blue'|S])
 adjetivo(femenino, singular,['azul'|S],['blue'|S]).
-adjetivo(femenino, plural,['azules'|S],['blue'|S]).
+adjetivo(femenino, plural,['azules'|S],['blue'|S])
 
-%amarillo
+%amarillo 
 adjetivo(masculino, singular,['amarillo'|S],['yellow'|S]).
-adjetivo(masculino, plural,['amarillos'|S],['yellow'|S]).
+adjetivo(masculino, plural,['amarillos'|S],['yellow'|S])
 adjetivo(femenino, singular,['amarilla'|S],['yellow'|S]).
-adjetivo(femenino, plural,['amaarillas'|S],['yellow'|S]).
+adjetivo(femenino, plural,['amaarillas'|S],['yellow'|S])
 
 %bonito
 adjetivo(masculino, singular,['bonito'|S],['pretty'|S]).
-adjetivo(masculino, plural,['bonitos'|S],['pretty'|S]).
+adjetivo(masculino, plural,['bonitos'|S],['pretty'|S])
 adjetivo(femenino, singular,['bonita'|S],['pretty'|S]).
-adjetivo(femenino, plural,['bonitas'|S],['pretty'|S]).
+adjetivo(femenino, plural,['bonitas'|S],['pretty'|S])
 
 %feo
 adjetivo(masculino, singular,['feo'|S],['ugly'|S]).
-adjetivo(masculino, plural,['feos'|S],['ugly'|S]).
+adjetivo(masculino, plural,['feos'|S],['ugly'|S])
 adjetivo(femenino, singular,['fea'|S],['ugly'|S]).
-adjetivo(femenino, plural,['feas'|S],['ugly'|S]).
+adjetivo(femenino, plural,['feas'|S],['ugly'|S])
 
 %facil
 adjetivo(masculino, singular,['fácil'|S],['easy'|S]).
-adjetivo(masculino, plural,['faciles'|S],['easy'|S]).
+adjetivo(masculino, plural,['faciles'|S],['easy'|S])
 adjetivo(femenino, singular,['fácil'|S],['easy'|S]).
-adjetivo(femenino, plural,['faciles'|S],['easy'|S]).
+adjetivo(femenino, plural,['faciles'|S],['easy'|S])
 
 %dificil
 adjetivo(masculino, singular,['dificil'|S],['hard'|S]).
-adjetivo(masculino, plural,['dificiles'|S],['hard'|S]).
+adjetivo(masculino, plural,['dificiles'|S],['hard'|S])
 adjetivo(femenino, singular,['dificil'|S],['hard'|S]).
-adjetivo(femenino, plural,['dificiles'|S],['hard'|S]).
+adjetivo(femenino, plural,['dificiles'|S],['hard'|S])
 
 %fuerte
 adjetivo(masculino, singular,['fuerte'|S],['strong'|S]).
-adjetivo(masculino, plural,['fuertes'|S],['strong'|S]).
+adjetivo(masculino, plural,['fuertes'|S],['strong'|S])
 adjetivo(femenino, singular,['fuerte'|S],['strong'|S]).
-adjetivo(femenino, plural,['fuertes'|S],['strong'|S]).
+adjetivo(femenino, plural,['fuertes'|S],['strong'|S])
 
 %debil
 adjetivo(masculino, singular,['debil'|S],['weak'|S]).
-adjetivo(masculino, plural,['debiles'|S],['weak'|S]).
+adjetivo(masculino, plural,['debiles'|S],['weak'|S])
 adjetivo(femenino, singular,['debil'|S],['weak'|S]).
-adjetivo(femenino, plural,['debiles'|S],['weak'|S]).
+adjetivo(femenino, plural,['debiles'|S],['weak'|S])
 /*
 adjetivo(masculino, singular,['adj'|S],['adj'|S]).
 adjetivo(masculino, plural,['adj'|S],['adj'|S])
