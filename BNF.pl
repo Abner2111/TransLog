@@ -1,5 +1,5 @@
 :-include('DB.pl').
-
+:- style_check(-singleton).
 % Retorna la union de dos listas
 concatenar([], L, L).
 concatenar([X|L1], L2, [X|L3]):-concatenar(L1, L2, L3).
@@ -22,7 +22,7 @@ oracion(ES, EN):- frase(ES, EN, []).
 oracion(ES, EN):- sintagma_nominal(ES,EN, []).
 
 % Sintagma nominal + sintagma verbal
-oracion(ES, EN):- sintagma_nominal(ES, EN1, S1), sintagma_verbal(S1, EN2, S), concatenar(EN1, EN2, EN).
+oracion(ES, EN):- sintagma_nominal(ES, EN1, S1), sintagma_verbal(S1, EN2, []), concatenar(EN1, EN2, EN).
 
 % Sintagma nominal
 % Valida si es una estructura que tiene un sustantivo o pronombre como nucleo
