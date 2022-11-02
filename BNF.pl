@@ -54,7 +54,7 @@ sintagma_nominal(ES,EN, S):- determinante(GENERO, NUMERO, ES1, EN, S1),
 % Ejm: carro rojo -> red car
 sintagma_nominal(ES,EN, S):- sustantivo(GENERO, NUMERO, ES, EN1, S1),
                              adjetivo(GENERO, NUMERO, S1, EN2, S), 
-                             primero(EN1, P), primero(EN2, P2)
+                             primero(EN1, P), primero(EN2, P2),
                              concatenar(P2,P, EN).
 
 % Sustantivo + adjetivo EN -> ES ----------------------------------------------revisar
@@ -79,7 +79,7 @@ sintagma_nominal(ES, EN, S):- determinante(GENERO, NUMERO, ES, EN1, S1),
 sintagma_nominal(ES, EN, S):- determinante(GENERO, NUMERO, ES1, EN, S1),
                               adjetivo(GENERO, NUMERO, ES2, S1, S), 
                               sustantivo(GENERO, NUMERO, ES3, S2, S), 
-                              primero(ES1, P1), primero(ES3, P3), primero(ES2, P2)
+                              primero(ES1, P1), primero(ES3, P3), primero(ES2, P2),
                               concatenar(P1, P3, R), concatenar(R, P2, ES).
 
 % Determinante + adjetivo + sustantivo ES-> EN
@@ -87,12 +87,13 @@ sintagma_nominal(ES, EN, S):- determinante(GENERO, NUMERO, ES1, EN, S1),
 sintagma_nominal(ES, EN, S):- determinante(GENERO, NUMERO, ES, EN1, S1), 
                               adjetivo(GENERO, NUMERO, S1, EN2, S2), 
                               sustantivo(GENERO, NUMERO, S2, EN3, S), 
-                              primero(EN1, P1), primero(EN2, P2), primero(EN3, P3)
+                              primero(EN1, P1), primero(EN2, P2), primero(EN3, P3),
                               concatenar(P1, P2, R), concatenar(R, P3, EN).
 
 % Sintagma verbal
 
 % verbo + sintagma nominal
+% como frutas rojas
 
 sintagma_verbal(ES,EN,S):- verbo(PERSONA, NUMERO, ES, EN1, S1), sintagma_nominal(S1, EN2, []), primero(EN1, P), concatenar(P, EN2, EN).
 
@@ -102,7 +103,8 @@ sintagma_verbal(ES,EN,S):- verbo(PERSONA, NUMERO, ES, EN1, S1), sintagma_nominal
 sintagma_verbal(ES, EN, S):- verbo(PERSONA, NUMERO, ES, P, S), primero(P, EN).
 sintagma_verbal(ES, EN, S):- verbo(PERSONA, NUMERO, P, EN, S), primero(P, ES).
 
-%Verbo y un adjetivo
+% Verbo y un adjetivo
+% Ejm: trabajo facil
 
 sintagma_verbal(ES, EN, S):- verbo(PERSONA, NUMERO, ES, EN1, S1), 
                              adjetivo(GENERO, NUMERO, S1, EN2, S), 
@@ -115,6 +117,7 @@ sintagma_verbal(ES, EN, S):- verbo(PERSONA, NUMERO, ES1, EN, S1),
                              concatenar(P,P2, ES).
 
 % Verbo y adverbio
+% Ejm: como ahora
 
 sintagma_verbal(ES, EN, S):- verbo(PERSONA, NUMERO, ES, EN1, S1),
                              adverbio(S1, EN2, S), 
