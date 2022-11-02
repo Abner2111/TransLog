@@ -24,9 +24,6 @@ oracion(ES, EN):- sintagma_nominal(ES,EN, []).
 % Sintagma nominal + sintagma verbal
 oracion(ES, EN):- sintagma_nominal(ES, EN1, S1), sintagma_verbal(S1, EN2, S), concatenar(EN1, EN2, EN).
 
-% Sintagma nominal + sintagma verbal + Sintagma nominal
-
-
 % Sintagma nominal
 % Valida si es una estructura que tiene un sustantivo o pronombre como nucleo
 
@@ -95,6 +92,10 @@ sintagma_nominal(ES, EN, S):- determinante(GENERO, NUMERO, ES, EN1, S1),
 
 % Sintagma verbal
 
+% verbo + sintagma nominal
+
+sintagma_verbal(ES,EN,S):- verbo(PERSONA, NUMERO, ES, EN1, S1), sintagma_nominal(S1, EN2, []), primero(EN1, P), concatenar(P, EN2, EN).
+
 % Solamente verbo
 % Ejm: comer
 
@@ -124,6 +125,7 @@ sintagma_verbal(ES, EN, S):- verbo(PERSONA, NUMERO, ES1, EN, S1),
                              adverbio(ES2, S1, S), 
                              primero(ES1, P), primero(ES2, P2),
                              concatenar(P,P2, ES).
+
 
 
 
