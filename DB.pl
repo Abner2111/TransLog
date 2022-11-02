@@ -15,6 +15,16 @@ despedida(['chao'|S], ['bye'|S],S).
 despedida(['nos', 'vemos'|S], ['see', 'you', 'later'|S],S).
 %frase(fraseespanol, )
 
+frase(['cuantos', 'anos', 'tines?'|S], ['how','old','are','you?'], S).
+frase(['como', 'estas?'|S], ['how','are','you'|S],S).
+frase(['de', 'donde', 'eres?',|S], ['where','are','you', 'from?' |S],S).
+frase(['donde', 'trabajas?'|S], ['where','do','you', 'work' |S],S).
+frase(['estas', 'casado?'|S], ['are','you','married?'|S],S).
+frase(['que', 'estas', 'haciendo?' |S], ['what','are','you', 'doing?' |S],S).
+frase(['romper'],['Break','off'|S],S).
+frase(['entrar'],['get','in'|S],S).
+frase(['abandonar'],['give','up'|S],S).
+frase(['encender'],['turn','on'|S],S).
 
 %determinantes
 determinante(masculino, singular,  ['el'|S],['the'|S],S).
