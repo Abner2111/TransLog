@@ -15,10 +15,10 @@ despedida(['chao'|S], ['bye'|S],S).
 despedida(['nos', 'vemos'|S], ['see', 'you', 'later'|S],S).
 %frase(fraseespanol, )
 
-frase(['cuantos', 'anos', 'tines?'|S], ['how','old','are','you?'], S).
-frase(['como', 'estas?'|S], ['how','are','you'|S],S).
+frase(['cuantos', 'anos', 'tienes?'|S], ['how','old','are','you?'], S).
+frase(['como', 'estas?'|S], ['how','are','you?'|S],S).
 frase(['de', 'donde', 'eres?'|S], ['where','are','you', 'from?'|S],S).
-frase(['donde', 'trabajas?'|S], ['where','do','you', 'work' |S],S).
+frase(['donde', 'trabajas?'|S], ['where','do','you', 'work?' |S],S).
 frase(['estas', 'casado?'|S], ['are','you','married?'|S],S).
 frase(['que', 'estas', 'haciendo?'|S], ['what','are','you', 'doing?' |S],S).
 frase(['romper'|S],['Break','off'|S],S).
@@ -297,7 +297,7 @@ sustantivo(masculino, singular,['parque'|S],['park'|S],S).
 sustantivo(masculino, singular,['telefono'|S],['phone'|S],S).
 sustantivo(masculino, singular,['zapato'|S],['shoe'|S],S).
 sustantivo(masculino, singular,['gato'|S],['cat'|S],S).
-
+sustantivo(masculino, singular,['perro'|S],['dog'|S],S).
 %sustantivos femenino singular
 sustantivo(femenino, singular, ['mujer'|S],['woman'|S],S).
 sustantivo(femenino, singular,['policia'|S],['police'|S],S).
@@ -380,6 +380,7 @@ sustantivo(masculino, plural,['parques'|S],['parks'|S],S).
 sustantivo(masculino, plural,['telefonos'|S],['phones'|S],S).
 sustantivo(masculino, plural,['zapatos'|S],['shoes'|S],S).
 sustantivo(masculino, plural,['gatos'|S],['cats'|S],S).
+sustantivo(masculino, plural,['perros'|S],['dogs'|S],S).
 %adverbio(espanol, ingles, resto)
 adverbio(['ahora'|S], ['now'|S],S).
 adverbio(['antes'|S], ['before'|S],S).
