@@ -15,6 +15,9 @@ oracion(ES,EN):- saludo(ES, EN, []).
 % Despedida
 oracion(ES, EN):- despedida(ES, EN, []).
 
+% Frase
+oracion(ES, EN):- frase(ES, EN, []).
+
 % Solo sintagma nominal
 oracion(ES, EN):- sintagma_nominal(ES,EN, []).
 
