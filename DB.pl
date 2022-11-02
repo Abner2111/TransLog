@@ -7,13 +7,24 @@
 %logica(unir base de datos con gramaticas, obtener input de usuario,interfaz)->Logic.db
 
 %saludo(saludoespanol, saludoingles)
-saludo(['Pura vida'|S], ['Everything going good'|S],S).
-saludo(['Tuanis'|S],['Everything going good',S],S).
+saludo(['pura', 'vida'|S], [['everything','going', 'good']|S],S).
+saludo(['tuanis'|S],['everything','going', 'good'|S],S).
+saludo(['hola'|S], ['hello'|S], S).
 %despedida(despedidaespanol, despedidaingles)
-despedida(['Chao'|S], ['Bye Bye'|S],S).
-despedida(['Nos vemos'|S], ['See you later'|S],S).
+despedida(['chao'|S], ['bye'|S],S).
+despedida(['nos', 'vemos'|S], ['see', 'you', 'later'|S],S).
 %frase(fraseespanol, )
 
+frase(['cuantos', 'anos', 'tines?'|S], ['how','old','are','you?'], S).
+frase(['como', 'estas?'|S], ['how','are','you'|S],S).
+frase(['de', 'donde', 'eres?'|S], ['where','are','you', 'from?'|S],S).
+frase(['donde', 'trabajas?'|S], ['where','do','you', 'work' |S],S).
+frase(['estas', 'casado?'|S], ['are','you','married?'|S],S).
+frase(['que', 'estas', 'haciendo?'|S], ['what','are','you', 'doing?' |S],S).
+frase(['romper'|S],['Break','off'|S],S).
+frase(['entrar'|S],['get','in'|S],S).
+frase(['abandonar'|S],['give','up'|S],S).
+frase(['encender'|S],['turn','on'|S],S).
 
 %determinantes
 determinante(masculino, singular,  ['el'|S],['the'|S],S).
@@ -229,7 +240,7 @@ adjetivo(femenino, singular,['negra'|S],['black'|S], S).
 adjetivo(femenino, singular,['verde'|S],['green'|S], S).
 adjetivo(femenino, singular,['azul'|S],['blue'|S], S).
 adjetivo(femenino, singular,['amarilla'|S],['yellow'|S], S).
-adjetivo(femenino, singular,['bonita'|S],['pretty'|S],S).
+adjetivo(femenino, singular,['bonita'|S],['pretty'|S], S).
 adjetivo(femenino, singular,['fea'|S],['ugly'|S], S).
 adjetivo(femenino, singular,['facil'|S],['easy'|S], S).
 adjetivo(femenino, singular,['dificil'|S],['hard'|S], S).
