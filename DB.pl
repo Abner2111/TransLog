@@ -43,7 +43,7 @@ pronombre(masculino, singular, ['el'|S], ['he'|S],S).
 pronombre(femenino, singular, ['ella'|S], ['she'|S],S).
 pronombre(neutro, singular, ['ello'|S], ['it'|S],S).
 pronombre(masculino, plural, ['nosotros'|S], ['we'|S],S).
-pronombre(masculino, plural, ['vosotros'|S], ['you'|S],S).
+pronombre(masculino, plural, ['ustedes'|S], ['you'|S],S).
 pronombre(masculino, plural, ['ellos'|S], ['they'|S],S).
 pronombre(femenino, plural,['ellas'|S], ['they'|S],S).
 
@@ -71,6 +71,10 @@ verbo(primera, singular, ['quiero'|S], ['want'|S],S).
 verbo(primera, singular, ['trabajo'|S], ['work'|S],S).
 verbo(primera, singular, ['vengo'|S], ['come'|S],S).
 verbo(primera, singular, ['hago'|S], ['do'|S],S).
+verbo(primera, singular, ['corro'|S], ['run'|S],S).
+verbo(primera, singular, ['abro'|S], ['open'|S],S).
+verbo(primera, singular, ['asesino'|S], ['murder'|S],S).
+verbo(primera, singular, ['muevo'|S], ['move'|S],S).
 
 %verbo Segunda persona singular
 
@@ -92,6 +96,10 @@ verbo(segunda, singular, ['quieres'|S], ['want'|S],S).
 verbo(segunda, singular, ['trabajas'|S], ['work'|S],S).
 verbo(segunda, singular, ['vienes'|S], ['come'|S],S).
 verbo(segunda, singular, ['haces'|S], ['do'|S],S).
+verbo(segunda, singular, ['corres'|S], ['run'|S],S).
+verbo(segunda, singular, ['abres'|S], ['open'|S],S).
+verbo(segunda, singular, ['asesinas'|S], ['murder'|S],S).
+verbo(segunda, singular, ['mueves'|S], ['move'|S],S).
 
 %verbo Tercera persona singular
 verbo(tercera, singular, ['esta'|S], ['is'|S],S).
@@ -112,6 +120,10 @@ verbo(tercera, singular, ['quiere'|S], ['wants'|S],S).
 verbo(tercera, singular, ['trabaja'|S], ['works'|S],S).
 verbo(tercera, singular, ['viene'|S], ['comes'|S],S).
 verbo(tercera, singular, ['hace'|S], ['does'|S],S).
+verbo(tercera, singular, ['corre'|S], ['runs'|S],S).
+verbo(tercera, singular, ['abre'|S], ['opens'|S],S).
+verbo(tercera, singular, ['asesina'|S], ['murders'|S],S).
+verbo(tercera, singular, ['mueve'|S], ['moves'|S],S).
 
 %verbo Primer persona plural
 verbo(primera, plural, ['estamos'|S], ['are'|S],S).
@@ -132,26 +144,34 @@ verbo(primera, plural, ['queremos'|S], ['want'|S],S).
 verbo(primera, plural, ['trabajamos'|S], ['work'|S],S).
 verbo(primera, plural, ['venimos'|S], ['come'|S],S).
 verbo(primera, plural, ['hacemos'|S], ['do'|S],S).
+verbo(primera, plural, ['corremos'|S], ['run'|S],S).
+verbo(primera, plural, ['abrimos'|S], ['open'|S],S).
+verbo(primera, plural, ['asesinamos'|S], ['murder'|S],S).
+verbo(primera, plural, ['movemos'|S], ['move'|S],S).
 
 %verbo Segunda Persona Plural
-verbo(segunda, plural, ['estais'|S], ['are'|S],S).
-verbo(segunda, plural, ['teneis'|S], ['have'|S],S).
-verbo(segunda, plural, ['preguntais'|S], ['ask'|S],S).
-verbo(segunda, plural, ['llamais'|S], ['call'|S],S).
-verbo(segunda, plural, ['tomais'|S], ['take'|S],S).
-verbo(segunda, plural, ['comeis'|S], ['eat'|S],S).
-verbo(segunda, plural, ['dais'|S],['give'|S],S).
-verbo(segunda, plural, ['vais'|S], ['go'|S],S).
-verbo(segunda, plural, ['sabeis'|S], ['know'|S],S).
-verbo(segunda, plural, ['mirais'|S], ['watch'|S],S).
-verbo(segunda, plural, ['decis'|S], ['say'|S],S).
-verbo(segunda, plural, ['veis'|S], ['see'|S],S).
-verbo(segunda, plural, ['pensais'|S], ['think'|S],S).
-verbo(segunda, plural, ['usais'|S], ['use'|S],S).
-verbo(segunda, plural, ['quereis'|S], ['want'|S],S).
-verbo(segunda, plural, ['trabajais'|S], ['work'|S],S).
+verbo(segunda, plural, ['estan'|S], ['are'|S],S).
+verbo(segunda, plural, ['tienen'|S], ['have'|S],S).
+verbo(segunda, plural, ['preguntan'|S], ['ask'|S],S).
+verbo(segunda, plural, ['llaman'|S], ['call'|S],S).
+verbo(segunda, plural, ['toman'|S], ['take'|S],S).
+verbo(segunda, plural, ['comen'|S], ['eat'|S],S).
+verbo(segunda, plural, ['dan'|S],['give'|S],S).
+verbo(segunda, plural, ['van'|S], ['go'|S],S).
+verbo(segunda, plural, ['saben'|S], ['know'|S],S).
+verbo(segunda, plural, ['miran'|S], ['watch'|S],S).
+verbo(segunda, plural, ['dicen'|S], ['say'|S],S).
+verbo(segunda, plural, ['ven'|S], ['see'|S],S).
+verbo(segunda, plural, ['piensan'|S], ['think'|S],S).
+verbo(segunda, plural, ['usan'|S], ['use'|S],S).
+verbo(segunda, plural, ['quieren'|S], ['want'|S],S).
+verbo(segunda, plural, ['trabajan'|S], ['work'|S],S).
 verbo(segunda, plural, ['vienen'|S], ['come'|S],S).
 verbo(segunda, plural, ['hacen'|S], ['do'|S],S).
+verbo(segunda, plural, ['corren'|S], ['run'|S],S).
+verbo(segunda, plural, ['abren'|S], ['open'|S],S).
+verbo(segunda, plural, ['asesinan'|S], ['murder'|S],S).
+verbo(segunda, plural, ['mueven'|S], ['move'|S],S).
 
 %verbo Tercera persona Plural
 verbo(tercera, plural, ['estan'|S], ['are'|S],S).
@@ -172,7 +192,10 @@ verbo(tercera, plural, ['quieren'|S], ['want'|S],S).
 verbo(tercera, plural, ['trabajan'|S], ['work'|S],S).
 verbo(tercera, plural, ['vienen'|S], ['come'|S],S).
 verbo(tercera, plural, ['hacen'|S], ['do'|S],S).
-
+verbo(tercera, plural, ['corren'|S], ['run'|S],S).
+verbo(tercera, plural, ['abren'|S], ['open'|S],S).
+verbo(tercera, plural, ['asesinan'|S], ['murder'|S],S).
+verbo(tercera, plural, ['mueven'|S], ['move'|S],S).
 %ADJETIVOS
 
 %Adjetivos masculino singular
@@ -233,7 +256,7 @@ adjetivo(femenino, plural,['rojas'|S],['red'|S], S).
 adjetivo(femenino, plural,['negras'|S],['black'|S], S).
 adjetivo(femenino, plural,['verdes'|S],['green'|S], S).
 adjetivo(femenino, plural,['azules'|S],['blue'|S], S).
-adjetivo(femenino, plural,['amaarillas'|S],['yellow'|S], S).
+adjetivo(femenino, plural,['amarillas'|S],['yellow'|S], S).
 adjetivo(femenino, plural,['bonitas'|S],['pretty'|S], S).
 adjetivo(femenino, plural,['feas'|S],['ugly'|S], S).
 adjetivo(femenino, plural,['faciles'|S],['easy'|S], S).
@@ -273,6 +296,7 @@ sustantivo(masculino, singular,['periodico'|S],['newspaper'|S],S).
 sustantivo(masculino, singular,['parque'|S],['park'|S],S).
 sustantivo(masculino, singular,['telefono'|S],['phone'|S],S).
 sustantivo(masculino, singular,['zapato'|S],['shoe'|S],S).
+sustantivo(masculino, singular,['gato'|S],['cat'|S],S).
 
 %sustantivos femenino singular
 sustantivo(femenino, singular, ['mujer'|S],['woman'|S],S).
@@ -299,6 +323,7 @@ sustantivo(femenino, singular,['iglesia'|S],['church'|S],S).
 sustantivo(femenino, singular,['justicia'|S],['justice'|S],S).
 sustantivo(femenino, singular,['mentira'|S],['lie'|S],S).
 sustantivo(femenino, singular,['ropa'|S],['clothes'|S],S).
+sustantivo(femenino, singular,['gata'|S],['cat'|S],S).
 
 %sustantivos - femenino plurales
 
@@ -324,6 +349,7 @@ sustantivo(femenino, plural,['flores'|S],['flowers'|S],S).
 sustantivo(femenino, plural,['hijas'|S],['daughters'|S],S).
 sustantivo(femenino, plural,['iglesias'|S],['churches'|S],S).
 sustantivo(femenino, plural,['mentiras'|S],['lies'|S],S).
+sustantivo(femenino, plural,['gatas'|S],['cats'|S],S).
 
 %sustantivos - masculino plurales
 sustantivo(masculino, plural,['anteojos'|S],['glasses'|S],S). 
@@ -353,7 +379,7 @@ sustantivo(masculino, plural,['periodicos'|S],['newspapers'|S],S).
 sustantivo(masculino, plural,['parques'|S],['parks'|S],S).
 sustantivo(masculino, plural,['telefonos'|S],['phones'|S],S).
 sustantivo(masculino, plural,['zapatos'|S],['shoes'|S],S).
-
+sustantivo(masculino, plural,['gatos'|S],['cats'|S],S).
 %adverbio(espanol, ingles, resto)
 adverbio(['ahora'|S], ['now'|S],S).
 adverbio(['antes'|S], ['before'|S],S).
