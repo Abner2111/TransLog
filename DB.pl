@@ -229,7 +229,7 @@ adjetivo(femenino, singular,['negra'|S],['black'|S], S).
 adjetivo(femenino, singular,['verde'|S],['green'|S], S).
 adjetivo(femenino, singular,['azul'|S],['blue'|S], S).
 adjetivo(femenino, singular,['amarilla'|S],['yellow'|S], S).
-adjetivo(femenino, singular,['bonita'|S],['pretty'|S]V).
+adjetivo(femenino, singular,['bonita'|S],['pretty'|S],S).
 adjetivo(femenino, singular,['fea'|S],['ugly'|S], S).
 adjetivo(femenino, singular,['facil'|S],['easy'|S], S).
 adjetivo(femenino, singular,['dificil'|S],['hard'|S], S).
