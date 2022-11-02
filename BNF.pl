@@ -21,8 +21,13 @@ oracion(ES, EN):- frase(ES, EN, []).
 % Solo sintagma nominal
 oracion(ES, EN):- sintagma_nominal(ES,EN, []).
 
-% Sintagma nominal + sintagma verbal
+% Sintagma verbal
+oracion(ES, EN):- sintagma_verbal(ES, EN, []).
+
+% Sintagma nominal + sintagma verbal --------------- aqui esta el problema de tiempo
+
 oracion(ES, EN):- sintagma_nominal(ES, EN1, S1), sintagma_verbal(S1, EN2, []), concatenar(EN1, EN2, EN).
+%oracion(ES, EN):- sintagma_nominal(ES1, EN, S1), sintagma_verbal(ES2, S1, []), concatenar(ES1, ES2, ES).
 
 % Sintagma nominal
 % Valida si es una estructura que tiene un sustantivo o pronombre como nucleo
@@ -95,6 +100,7 @@ sintagma_nominal(ES, EN, S):- determinante(GENERO, NUMERO, ES, EN1, S1),
 % verbo + sintagma nominal
 % como frutas rojas
 
+%sintagma_verbal(ES,EN,S):- verbo(PERSONA, NUMERO, ES1, EN, S1), sintagma_nominal(ES2, S1,[]), primero(ES1, P), concatenar(P, ES2, ES). % esta la añadi para ver si eliminaba el problema de tiempo
 sintagma_verbal(ES,EN,S):- verbo(PERSONA, NUMERO, ES, EN1, S1), sintagma_nominal(S1, EN2, []), primero(EN1, P), concatenar(P, EN2, EN).
 
 % Solamente verbo
