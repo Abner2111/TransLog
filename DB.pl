@@ -7,11 +7,12 @@
 %logica(unir base de datos con gramaticas, obtener input de usuario,interfaz)->Logic.db
 
 %saludo(saludoespanol, saludoingles)
-saludo(['Pura vida'|S], ['Everything going good'|S],S).
-saludo(['Tuanis'|S],['Everything going good',S],S).
+saludo(['pura', 'vida'|S], [['everything','going', 'good']|S],S).
+saludo(['tuanis'|S],['everything','going', 'good'|S],S).
+saludo(['hola'|S], ['hello'|S], S)
 %despedida(despedidaespanol, despedidaingles)
-despedida(['Chao'|S], ['Bye Bye'|S],S).
-despedida(['Nos vemos'|S], ['See you later'|S],S).
+despedida(['chao'|S], ['bye'|S],S).
+despedida(['nos', 'vemos'|S], ['see', 'you', 'later'|S],S).
 %frase(fraseespanol, )
 
 
