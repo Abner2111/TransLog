@@ -245,7 +245,7 @@ adjetivo(femenino, plural,['rojas'|S],['red'|S], S).
 adjetivo(femenino, plural,['negras'|S],['black'|S], S).
 adjetivo(femenino, plural,['verdes'|S],['green'|S], S).
 adjetivo(femenino, plural,['azules'|S],['blue'|S], S).
-adjetivo(femenino, plural,['amaarillas'|S],['yellow'|S], S).
+adjetivo(femenino, plural,['amarillas'|S],['yellow'|S], S).
 adjetivo(femenino, plural,['bonitas'|S],['pretty'|S], S).
 adjetivo(femenino, plural,['feas'|S],['ugly'|S], S).
 adjetivo(femenino, plural,['faciles'|S],['easy'|S], S).
