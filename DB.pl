@@ -285,6 +285,7 @@ sustantivo(masculino, singular,['periodico'|S],['newspaper'|S],S).
 sustantivo(masculino, singular,['parque'|S],['park'|S],S).
 sustantivo(masculino, singular,['telefono'|S],['phone'|S],S).
 sustantivo(masculino, singular,['zapato'|S],['shoe'|S],S).
+sustantivo(masculino, singular,['gato'|S],['cat'|S],S).
 
 %sustantivos femenino singular
 sustantivo(femenino, singular, ['mujer'|S],['woman'|S],S).
@@ -311,6 +312,7 @@ sustantivo(femenino, singular,['iglesia'|S],['church'|S],S).
 sustantivo(femenino, singular,['justicia'|S],['justice'|S],S).
 sustantivo(femenino, singular,['mentira'|S],['lie'|S],S).
 sustantivo(femenino, singular,['ropa'|S],['clothes'|S],S).
+sustantivo(femenino, singular,['gata'|S],['cat'|S],S).
 
 %sustantivos - femenino plurales
 
@@ -336,6 +338,7 @@ sustantivo(femenino, plural,['flores'|S],['flowers'|S],S).
 sustantivo(femenino, plural,['hijas'|S],['daughters'|S],S).
 sustantivo(femenino, plural,['iglesias'|S],['churches'|S],S).
 sustantivo(femenino, plural,['mentiras'|S],['lies'|S],S).
+sustantivo(femenino, plural,['gatas'|S],['cats'|S],S).
 
 %sustantivos - masculino plurales
 sustantivo(masculino, plural,['anteojos'|S],['glasses'|S],S). 
@@ -365,7 +368,7 @@ sustantivo(masculino, plural,['periodicos'|S],['newspapers'|S],S).
 sustantivo(masculino, plural,['parques'|S],['parks'|S],S).
 sustantivo(masculino, plural,['telefonos'|S],['phones'|S],S).
 sustantivo(masculino, plural,['zapatos'|S],['shoes'|S],S).
-
+sustantivo(masculino, plural,['gatos'|S],['cats'|S],S).
 %adverbio(espanol, ingles, resto)
 adverbio(['ahora'|S], ['now'|S],S).
 adverbio(['antes'|S], ['before'|S],S).
